@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
 encoding//Mappings/LoadDimensions/Load\ dim_discount.map=UTF-8
+encoding//Mappings/LoadDimensions/LoadDim_Customer.map=UTF-8
 encoding//Mappings/LoadDimensions/LoadDim_bedroom.map=UTF-8
+encoding//Mappings/LoadDimensions/LoadDim_geography.map=UTF-8
 encoding//Mappings/LoadDimensions/LoadDim_payment_type.map=UTF-8

@@ -10,6 +10,8 @@
     <attribute defType="com.stambia.rdbms.schema.rejectMask" id="_Sx9n8D49Ee27Rbg9YrGf1Q" value="R_[targetName]"/>
     <attribute defType="com.stambia.rdbms.schema.loadMask" id="_Sx9n8T49Ee27Rbg9YrGf1Q" value="L[number]_[targetName]"/>
     <attribute defType="com.stambia.rdbms.schema.integrationMask" id="_Sx9n8j49Ee27Rbg9YrGf1Q" value="I_[targetName]"/>
+    <attribute defType="com.stambia.rdbms.schema.work" id="_0zOp4D5pEe2HIsvGuwi14w" ref="resource.md#_Sx2TMD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=HOTEL_MANAGEMENT?"/>
+    <attribute defType="com.stambia.rdbms.schema.control" id="_1B5YAD5pEe2HIsvGuwi14w" ref="resource.md#_Sx2TMD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=HOTEL_MANAGEMENT?"/>
     <node defType="com.stambia.rdbms.datastore" id="_W6Od1j49Ee27Rbg9YrGf1Q" name="T_BILLING_LINES">
       <attribute defType="com.stambia.rdbms.datastore.name" id="_W6Od1z49Ee27Rbg9YrGf1Q" value="T_BILLING_LINES"/>
       <attribute defType="com.stambia.rdbms.datastore.type" id="_W6Od2D49Ee27Rbg9YrGf1Q" value="TABLE"/>
