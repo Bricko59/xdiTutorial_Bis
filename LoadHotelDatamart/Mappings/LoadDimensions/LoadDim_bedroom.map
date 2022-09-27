@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_8Qr88D5IEe2HIsvGuwi14w" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_-hXmID5IEe2HIsvGuwi14w" alias="DIM_BEDROOM" dataset="_-h0SGj5IEe2HIsvGuwi14w" ref="resource.md#_JYz5gT44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=DIM_BEDROOM?" subExpression="[A]">
+    <field id="_-hrIJT5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_BAR" ref="resource.md#_JZUP0D44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_BAR?" update="true">
+      <expression id="_CRXtAj5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression><![CDATA[case
+      when T_BEDROOM.BDR_BAR = 'true' then 1
+      else 0
+end]]></expression>
+      </expression>
+    </field>
+    <field id="_-hrIKD5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_TYPE" ref="resource.md#_JZVd9z44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_TYPE?" update="true">
+      <expression id="_CRXtAz5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>t_bedroom.bdr_type</expression>
+      </expression>
+    </field>
+    <field id="_-hrIID5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_ID" ref="resource.md#_JZRzkD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_ID?" update="true" updateKey="true">
+      <expression id="_CRXtAD5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>t_bedroom.bdr_id</expression>
+      </expression>
+    </field>
+    <field id="_-hrIIT5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_NUMBER" ref="resource.md#_JZRzmD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_NUMBER?" update="true">
+      <expression id="_CRXtBD5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>t_bedroom.bdr_number</expression>
+      </expression>
+    </field>
+    <field id="_-hrIKT5IEe2HIsvGuwi14w" enable="true" insert="true" name="UPDATE_DATE" ref="resource.md#_JZWFAD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=UPDATE_DATE?" update="true">
+      <expression id="_CRXtBT5JEe2HIsvGuwi14w" location="TRG" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>current_timestamp</expression>
+      </expression>
+    </field>
+    <field id="_-hrIJD5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_SHOWER" ref="resource.md#_JZToyD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_SHOWER?" update="true">
+      <expression id="_CRXtBj5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression><![CDATA[case
+      when T_BEDROOM.BDR_SHOWER = 'true' then 1
+      else 0
+end]]></expression>
+      </expression>
+    </field>
+    <field id="_-hrIJz5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_PHONE_NUMBER" ref="resource.md#_JZVd8D44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_PHONE_NUMBER?" update="true">
+      <expression id="_CRXtBz5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>t_bedroom.bdr_phone_number</expression>
+      </expression>
+    </field>
+    <field id="_-hrIJj5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_BED_COUNT" ref="resource.md#_JZU24D44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_BED_COUNT?" update="true">
+      <expression id="_CRXtCD5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression>convert(T_BEDROOM.BDR_BED_COUNT,NUMERIC)</expression>
+      </expression>
+    </field>
+    <field id="_-hrIIj5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_FLOOR" ref="resource.md#_JZRzoD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_FLOOR?" update="true">
+      <expression id="_CRXtCT5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression><![CDATA[CASE WHEN LOWER(t_bedroom.bdr_floor)='gf' THEN 0
+WHEN LOWER(t_bedroom.bdr_floor)='1st' THEN 1
+WHEN LOWER(t_bedroom.bdr_floor)='2nd' THEN 2
+END]]></expression>
+      </expression>
+    </field>
+    <field id="_-hrIIz5IEe2HIsvGuwi14w" enable="true" insert="true" name="BDR_BATH" ref="resource.md#_JZTowD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=BDR_BATH?" update="true">
+      <expression id="_CRXtCj5JEe2HIsvGuwi14w" setDescriptorRef="_CRXtAT5JEe2HIsvGuwi14w">
+        <expression><![CDATA[case
+      when T_BEDROOM.BDR_BATH = 'true' then 1
+      else 0
+end]]></expression>
+      </expression>
+    </field>
+    <constraint id="_-hrIKj5IEe2HIsvGuwi14w" name="PK_DIM_BEDROOM" ref="resource.md#_JZaWcD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=PK_DIM_BEDROOM?" reject="true"/>
+    <setDescriptor id="_CRXtAT5JEe2HIsvGuwi14w" label="A"/>
+  </datastore>
+  <datastore id="__0Vp4D5IEe2HIsvGuwi14w" alias="T_BEDROOM" dataset="__0fa7z5IEe2HIsvGuwi14w" ref="resource.md#_W6-r6T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_BEDROOM?">
+    <field id="__0fa4T5IEe2HIsvGuwi14w" fullAlias="BDR_BAR" name="BDR_BAR" ref="resource.md#_W6-sET49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_BAR?"/>
+    <field id="__0Vp4z5IEe2HIsvGuwi14w" fullAlias="BDR_NUMBER" name="BDR_NUMBER" ref="resource.md#_W6-r9D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_NUMBER?"/>
+    <field id="__0fa4D5IEe2HIsvGuwi14w" fullAlias="BDR_SHOWER" name="BDR_SHOWER" ref="resource.md#_W6-sCj49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_SHOWER?"/>
+    <field id="__0fa4z5IEe2HIsvGuwi14w" fullAlias="BDR_PHONE_NUMBER" name="BDR_PHONE_NUMBER" ref="resource.md#_W6-sID49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_PHONE_NUMBER?"/>
+    <field id="__0Vp4j5IEe2HIsvGuwi14w" fullAlias="BDR_ID" name="BDR_ID" ref="resource.md#_W6-r7D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_ID?" updateKey="true"/>
+    <field id="__0Vp5T5IEe2HIsvGuwi14w" fullAlias="BDR_BATH" name="BDR_BATH" ref="resource.md#_W6-sAz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_BATH?"/>
+    <field id="__0fa5D5IEe2HIsvGuwi14w" fullAlias="BDR_TYPE" name="BDR_TYPE" ref="resource.md#_W6-sJz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_TYPE?"/>
+    <field id="__0fa4j5IEe2HIsvGuwi14w" fullAlias="BDR_BED_COUNT" name="BDR_BED_COUNT" ref="resource.md#_W6-sGD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_BED_COUNT?"/>
+    <field id="__0Vp5D5IEe2HIsvGuwi14w" fullAlias="BDR_FLOOR" name="BDR_FLOOR" ref="resource.md#_W6-r_D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_FLOOR?"/>
+    <constraint id="__0fa5T5IEe2HIsvGuwi14w" name="PK_T_BEDROOM" ref="resource.md#_W7H1sD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_BEDROOM?" reject="true"/>
+  </datastore>
+  <template id="_CSK-QD5JEe2HIsvGuwi14w" name="L1_DIM_BEDROOM" process="resource.proc#_aafbe681-11ab-4ebc-ab56-de794128c580?fileId=_aafbe681-11ab-4ebc-ab56-de794128c580$type=proc$name=LOAD%20Rdbms%20to%20Rdbms?" sourceId="__0Vp4D5IEe2HIsvGuwi14w" targetId="_-hXmID5IEe2HIsvGuwi14w"/>
+  <template id="_CSoRQD5JEe2HIsvGuwi14w" name="I_DIM_BEDROOM" process="resource.proc#_HFOfdjEZEd-WZe6cNi2k2w?fileId=_HFOfdjEZEd-WZe6cNi2k2w$type=proc$name=INTEGRATION%20Hsql?" targetId="_-hXmID5IEe2HIsvGuwi14w"/>
+  <dataSet id="_-h0SGj5IEe2HIsvGuwi14w">
+    <container>_-hXmID5IEe2HIsvGuwi14w</container>
+  </dataSet>
+  <dataSet id="__0fa7z5IEe2HIsvGuwi14w">
+    <container>__0Vp4D5IEe2HIsvGuwi14w</container>
+  </dataSet>
+  <hint>
+    <usedField>#__0fa4T5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0Vp4z5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0fa4D5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0fa4z5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0Vp4j5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0Vp5T5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0fa5D5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0fa4j5IEe2HIsvGuwi14w</usedField>
+    <usedField>#__0Vp5D5IEe2HIsvGuwi14w</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_8XTiUD5IEe2HIsvGuwi14w" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="__0fa-T5IEe2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fa-z5IEe2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fa_D5IEe2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fa_T5IEe2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fa_j5IEe2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__0fa_z5IEe2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__0fbAD5IEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__0fbAT5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fbAj5IEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="__0fbAz5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__0fbBD5IEe2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__0fbBT5IEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__0fbBj5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__0fbBz5IEe2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#__0Vp4D5IEe2HIsvGuwi14w?fileId=_8Qr88D5IEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__0fa-j5IEe2HIsvGuwi14w" x="30" y="43"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_-iUoYD5IEe2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoYj5IEe2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoYz5IEe2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoZD5IEe2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoZT5IEe2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-iUoZj5IEe2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-iUoZz5IEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-iUoaD5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoaT5IEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_-iUoaj5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-iUoaz5IEe2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-iUobD5IEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-iUobT5IEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-jgUID5IEe2HIsvGuwi14w" type="7007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-jgUIT5IEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_-jgUIj5IEe2HIsvGuwi14w"/>
+    </children>
+    <element xmi:type="map:Datastore" href="resource.map#_-hXmID5IEe2HIsvGuwi14w?fileId=_8Qr88D5IEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-iUoYT5IEe2HIsvGuwi14w" x="357" y="30"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_8XTiUT5IEe2HIsvGuwi14w"/>
+  <element xmi:type="map:Map" href="resource.map#_8Qr88D5IEe2HIsvGuwi14w?fileId=_8Qr88D5IEe2HIsvGuwi14w$type=map$name=LoadDim_bedroom?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_CR0Y8D5JEe2HIsvGuwi14w" type="targetLink" source="_-iUoYD5IEe2HIsvGuwi14w" target="__0fa-T5IEe2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CR0Y8T5JEe2HIsvGuwi14w" points="[0, 0, 60, 0]$[-60, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tOqSwD5JEe2HIsvGuwi14w" id="(0.0,0.5)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tOq50D5JEe2HIsvGuwi14w" id="(1.0,0.4981684981684982)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_CR0Y8j5JEe2HIsvGuwi14w" type="targetDataSetLink" source="_-iUoYD5IEe2HIsvGuwi14w" target="_-iUoYD5IEe2HIsvGuwi14w">
+    <element xmi:type="map:DataSet" href="resource.map#__0fa7z5IEe2HIsvGuwi14w?fileId=_8Qr88D5IEe2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CR0Y8z5JEe2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_CR0Y9D5JEe2HIsvGuwi14w" type="targetSetLink" source="_-iUoYD5IEe2HIsvGuwi14w" target="_-iUoYD5IEe2HIsvGuwi14w">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_CRXtAT5JEe2HIsvGuwi14w?fileId=_8Qr88D5IEe2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CR0Y9T5JEe2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
