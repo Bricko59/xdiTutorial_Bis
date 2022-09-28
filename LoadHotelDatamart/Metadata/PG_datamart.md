@@ -146,6 +146,13 @@
           <attribute defType="com.stambia.rdbms.relation.pk" id="_JbFKez44Ee27Rbg9YrGf1Q" ref="resource.md#_Jarh1z44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=TIME_KEY_DAY?"/>
         </node>
       </node>
+      <node defType="com.stambia.rdbms.check" id="_AbZX5D8PEe2HIsvGuwi14w" name="CK_BILL_BIL_AMOUNT">
+        <attribute defType="com.stambia.rdbms.check.userMessage" id="_O8ozwD8PEe2HIsvGuwi14w" value="Amount below 10"/>
+        <attribute defType="com.stambia.rdbms.check.rejectCode" id="_PlhYsD8PEe2HIsvGuwi14w" value="BILL_001"/>
+        <attribute defType="com.stambia.rdbms.check.severity" id="_Sn0FAD8PEe2HIsvGuwi14w" value="200"/>
+        <attribute defType="com.stambia.rdbms.check.sql" id="_WrDQ8D8PEe2HIsvGuwi14w" value="fact_billing.bil_amount > 10"/>
+        <attribute defType="com.stambia.rdbms.check.remarks" id="_cW5ZcD8PEe2HIsvGuwi14w" value="Keep track of each record loaded into fact_billing with an amount below 10"/>
+      </node>
     </node>
     <node defType="com.stambia.rdbms.datastore" id="_JZqOED44Ee27Rbg9YrGf1Q" name="FACT_BOOKING">
       <attribute defType="com.stambia.rdbms.datastore.name" id="_JZqOET44Ee27Rbg9YrGf1Q" value="FACT_BOOKING"/>

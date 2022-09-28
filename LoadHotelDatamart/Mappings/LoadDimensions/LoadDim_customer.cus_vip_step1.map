@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_8c7FQD8QEe2HIsvGuwi14w" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_9mFswD8QEe2HIsvGuwi14w" alias="DIM_CUSTOMER" dataset="_9mLzcz8QEe2HIsvGuwi14w" ref="resource.md#_Ja2g4T44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=DIM_CUSTOMER?" subExpression="[A]">
+    <field id="_9mLzYz8QEe2HIsvGuwi14w" name="CUS_NAME" ref="resource.md#_Ja7Zbz44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CUS_NAME?">
+      <expression id="_AhDpED8REe2HIsvGuwi14w" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w"/>
+    </field>
+    <field id="_9mLzYj8QEe2HIsvGuwi14w" name="CUS_TITLE" ref="resource.md#_Ja7ZaD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CUS_TITLE?">
+      <expression id="_AhDpET8REe2HIsvGuwi14w" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w"/>
+    </field>
+    <field id="_9mLzZD8QEe2HIsvGuwi14w" name="CUS_COMPANY" ref="resource.md#_Ja7Zdj44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CUS_COMPANY?">
+      <expression id="_AhDpEj8REe2HIsvGuwi14w" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w"/>
+    </field>
+    <field id="_9mLzZT8QEe2HIsvGuwi14w" name="GEO_KEY_ID" ref="resource.md#_Ja7ZfT44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_KEY_ID?">
+      <expression id="_AhDpEz8REe2HIsvGuwi14w" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w"/>
+    </field>
+    <field id="_9mLzZj8QEe2HIsvGuwi14w" enable="true" insert="true" name="CUS_VIP" ref="resource.md#_Ja7ZhT44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CUS_VIP?" update="true">
+      <expression id="_AhDpFD8REe2HIsvGuwi14w" aggregate="true" location="SRC" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w">
+        <expression><![CDATA[case
+ when sum(T_BILLING_LINES.BLL_QTY*((T_BILLING_LINES.BLL_AMOUNT-T_BILLING_LINES.BLL_DISCOUNT_AMOUNT) - (T_BILLING_LINES.BLL_AMOUNT * T_BILLING_LINES.BLL_DISCOUNT_RATE / 100))) > 64000 then 1
+ else 0
+end]]></expression>
+      </expression>
+    </field>
+    <field id="_9mLzZz8QEe2HIsvGuwi14w" enable="true" insert="true" name="UPDATE_DATE" ref="resource.md#_Ja7ZjT44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=UPDATE_DATE?" update="true">
+      <expression id="_AhDpFT8REe2HIsvGuwi14w" location="TRG" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w">
+        <expression>current_timestamp</expression>
+      </expression>
+    </field>
+    <field id="_9mLzYT8QEe2HIsvGuwi14w" enable="true" insert="true" name="CUS_ID" ref="resource.md#_Ja7ZYD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?" update="true" updateKey="true">
+      <expression id="_AhBM0D8REe2HIsvGuwi14w" setDescriptorRef="_AhDCAD8REe2HIsvGuwi14w">
+        <expression>t_billing.cus_id</expression>
+      </expression>
+    </field>
+    <constraint id="_9mLzaD8QEe2HIsvGuwi14w" name="FK_DIM_CUSTOMER_GEO" ref="resource.md#_JbO7YD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=FK_DIM_CUSTOMER_GEO?" reject="true"/>
+    <constraint id="_9mLzaT8QEe2HIsvGuwi14w" name="CK_CUS_GEO_KEY_ID_001" ref="resource.md#_Kz0eJD5oEe2HIsvGuwi14w?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CK_CUS_GEO_KEY_ID_001?" reject="true"/>
+    <constraint id="_9mLzaj8QEe2HIsvGuwi14w" name="CK_CUS_GEO_KEY_ID_002" ref="resource.md#_aiogZD5oEe2HIsvGuwi14w?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=CK_CUS_GEO_KEY_ID_002?" reject="true"/>
+    <constraint id="_9mLzaz8QEe2HIsvGuwi14w" name="PK_DIM_CUSTOMER" ref="resource.md#_Ja7ZlD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=PK_DIM_CUSTOMER?" reject="true"/>
+    <setDescriptor id="_AhDCAD8REe2HIsvGuwi14w" label="A"/>
+  </datastore>
+  <datastore id="_-FciQD8QEe2HIsvGuwi14w" alias="T_BILLING" dataset="_-VyrdT8QEe2HIsvGuwi14w" ref="resource.md#_W7Jq4T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_BILLING?">
+    <field id="_-FciQz8QEe2HIsvGuwi14w" fullAlias="CUS_ID" name="CUS_ID" ref="resource.md#_W7Jq7D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?"/>
+    <field id="_-FciRT8QEe2HIsvGuwi14w" name="BIL_DATE" ref="resource.md#_W7Jq-z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BIL_DATE?"/>
+    <field id="_-FciRj8QEe2HIsvGuwi14w" name="BIL_PMT_DATE" ref="resource.md#_W7JrAj49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BIL_PMT_DATE?"/>
+    <field id="_-FciQj8QEe2HIsvGuwi14w" fullAlias="BIL_ID" name="BIL_ID" ref="resource.md#_W7Jq5D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BIL_ID?" updateKey="true"/>
+    <field id="_-FciRD8QEe2HIsvGuwi14w" name="PMT_CODE" ref="resource.md#_W7Jq9D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PMT_CODE?"/>
+    <constraint id="_-FciRz8QEe2HIsvGuwi14w" name="FK_BILLING_PAYMENT" ref="resource.md#_W7mW4D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_BILLING_PAYMENT?" reject="true"/>
+    <constraint id="_-FciSD8QEe2HIsvGuwi14w" name="FK_BILLING_CUSTOMER" ref="resource.md#_W7mW3D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_BILLING_CUSTOMER?" reject="true"/>
+    <constraint id="_-FciST8QEe2HIsvGuwi14w" name="PK_T_BILLING" ref="resource.md#_W7JrCT49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_BILLING?" reject="true"/>
+  </datastore>
+  <datastore id="_-VyrYD8QEe2HIsvGuwi14w" alias="T_BILLING_LINES" dataset="_-VyrdT8QEe2HIsvGuwi14w" ref="resource.md#_W6Od1j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_BILLING_LINES?">
+    <field id="_-VyraD8QEe2HIsvGuwi14w" name="BLL_TYPE" ref="resource.md#_W6OeBz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_TYPE?"/>
+    <field id="_-VyrZT8QEe2HIsvGuwi14w" fullAlias="BLL_DISCOUNT_RATE" name="BLL_DISCOUNT_RATE" ref="resource.md#_W6Od8D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_DISCOUNT_RATE?"/>
+    <field id="_-VyrZj8QEe2HIsvGuwi14w" fullAlias="BLL_DISCOUNT_AMOUNT" name="BLL_DISCOUNT_AMOUNT" ref="resource.md#_W6Od9z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_DISCOUNT_AMOUNT?"/>
+    <field id="_-VyrZz8QEe2HIsvGuwi14w" fullAlias="BLL_AMOUNT" name="BLL_AMOUNT" ref="resource.md#_W6Od_z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_AMOUNT?"/>
+    <field id="_-VyrYj8QEe2HIsvGuwi14w" name="BLL_ID" ref="resource.md#_W6Od2T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_ID?" updateKey="true"/>
+    <field id="_-VyraT8QEe2HIsvGuwi14w" name="BDR_ID" ref="resource.md#_W6OeDj49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BDR_ID?"/>
+    <field id="_-VyrYz8QEe2HIsvGuwi14w" fullAlias="BIL_ID" name="BIL_ID" ref="resource.md#_W6Od4T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BIL_ID?"/>
+    <field id="_-VyrZD8QEe2HIsvGuwi14w" fullAlias="BLL_QTY" name="BLL_QTY" ref="resource.md#_W6Od6T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=BLL_QTY?"/>
+    <constraint id="_-Vyraj8QEe2HIsvGuwi14w" name="PK_T_BILLING_LINES" ref="resource.md#_W6YO0D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_BILLING_LINES?" reject="true"/>
+    <constraint id="_-Vyraz8QEe2HIsvGuwi14w" name="FK_BILLING_LINES_BILLING" ref="resource.md#_W7cl2D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_BILLING_LINES_BILLING?" reject="true"/>
+    <constraint id="_-VyrbD8QEe2HIsvGuwi14w" name="FK_BILLING_LINES_BEDROOM" ref="resource.md#_W7cl1D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_BILLING_LINES_BEDROOM?" reject="true"/>
+  </datastore>
+  <join id="_dPfjcD8REe2HIsvGuwi14w" location="SRC" left="_-FciQD8QEe2HIsvGuwi14w" order="10" right="_-VyrYD8QEe2HIsvGuwi14w">
+    <expression>T_BILLING.BIL_ID = T_BILLING_LINES.BIL_ID</expression>
+  </join>
+  <template id="_AhUHyD8REe2HIsvGuwi14w" name="L1_DIM_CUSTOMER" process="resource.proc#_aafbe681-11ab-4ebc-ab56-de794128c580?fileId=_aafbe681-11ab-4ebc-ab56-de794128c580$type=proc$name=LOAD%20Rdbms%20to%20Rdbms?" sourceId="_-FciQD8QEe2HIsvGuwi14w _-VyrYD8QEe2HIsvGuwi14w" targetId="_9mFswD8QEe2HIsvGuwi14w"/>
+  <template id="_AhUH0z8REe2HIsvGuwi14w" name="I_DIM_CUSTOMER" process="resource.proc#_HFOfdjEZEd-WZe6cNi2k2w?fileId=_HFOfdjEZEd-WZe6cNi2k2w$type=proc$name=INTEGRATION%20Hsql?" targetId="_9mFswD8QEe2HIsvGuwi14w"/>
+  <dataSet id="_9mLzcz8QEe2HIsvGuwi14w">
+    <container>_9mFswD8QEe2HIsvGuwi14w</container>
+  </dataSet>
+  <dataSet id="_-VyrdT8QEe2HIsvGuwi14w">
+    <container>_-VyrYD8QEe2HIsvGuwi14w</container>
+    <container>_-FciQD8QEe2HIsvGuwi14w</container>
+  </dataSet>
+  <hint>
+    <usedField>#_-FciQz8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-FciQj8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-VyrZT8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-VyrZj8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-VyrZz8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-VyrYz8QEe2HIsvGuwi14w</usedField>
+    <usedField>#_-VyrZD8QEe2HIsvGuwi14w</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_8dd30D8QEe2HIsvGuwi14w" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_9mLzfD8QEe2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzfj8QEe2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzfz8QEe2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzgD8QEe2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzgT8QEe2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9mLzgj8QEe2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_9mLzgz8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_9mLzhD8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzhT8QEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_9mLzhj8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9mLzhz8QEe2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_9mLziD8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_9mLziT8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9mLzij8QEe2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_9mFswD8QEe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9mLzfT8QEe2HIsvGuwi14w" x="749" y="287"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_-FciWz8QEe2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciXT8QEe2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciXj8QEe2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciXz8QEe2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciYD8QEe2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-FciYT8QEe2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-FciYj8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-FciYz8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciZD8QEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_-FciZT8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-FciZj8QEe2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-FciZz8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-FciaD8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-FciaT8QEe2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_-FciQD8QEe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-FciXD8QEe2HIsvGuwi14w" x="53" y="217"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_-VyrhT8QEe2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-Vyrhz8QEe2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-VyriD8QEe2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-VyriT8QEe2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-Vyrij8QEe2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-Vyriz8QEe2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-VyrjD8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-VyrjT8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-Vyrjj8QEe2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_-Vyrjz8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-VyrkD8QEe2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-VyrkT8QEe2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-Vyrkj8QEe2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-Vyrkz8QEe2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_-VyrYD8QEe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Vyrhj8QEe2HIsvGuwi14w" x="136" y="457"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dPrwsD8REe2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_dPrwsT8REe2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_dPrwsj8REe2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_dPrwsz8REe2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_dPfjcD8REe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dPrwtD8REe2HIsvGuwi14w" x="-122" y="376"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_8dd30T8QEe2HIsvGuwi14w"/>
+  <element xmi:type="map:Map" href="resource.map#_8c7FQD8QEe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map$name=LoadDim_customer.cus_vip_step1?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_AhOBJz8REe2HIsvGuwi14w" type="targetLink" source="_9mLzfD8QEe2HIsvGuwi14w" target="_-FciWz8QEe2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AhOBKD8REe2HIsvGuwi14w" points="[-107, -15, 594, 80]$[-599, -81, 102, 14]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AhOBKz8REe2HIsvGuwi14w" type="targetSetLink" source="_9mLzfD8QEe2HIsvGuwi14w" target="_9mLzfD8QEe2HIsvGuwi14w">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_AhDCAD8REe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AhOBLD8REe2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_RJy88D8REe2HIsvGuwi14w" type="targetLink" source="_9mLzfD8QEe2HIsvGuwi14w" target="_-VyrhT8QEe2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RJy88T8REe2HIsvGuwi14w" points="[-300, 71, 467, -112]$[-620, 148, 147, -35]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_RJy88j8REe2HIsvGuwi14w" type="targetDataSetLink" source="_9mLzfD8QEe2HIsvGuwi14w" target="_9mLzfD8QEe2HIsvGuwi14w">
+    <element xmi:type="map:DataSet" href="resource.map#_-VyrdT8QEe2HIsvGuwi14w?fileId=_8c7FQD8QEe2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RJy88z8REe2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_dPrwtT8REe2HIsvGuwi14w" type="joinLink" source="_dPrwsD8REe2HIsvGuwi14w" target="_-VyrhT8QEe2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dPrwtj8REe2HIsvGuwi14w" points="[-1, -1, -283, -582]$[222, 457, -60, -124]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_dPrwtz8REe2HIsvGuwi14w" type="joinLink" source="_dPrwsD8REe2HIsvGuwi14w" target="_-FciWz8QEe2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dPrwuD8REe2HIsvGuwi14w" points="[-1, -1, -156, -304]$[110, 217, -45, -86]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
