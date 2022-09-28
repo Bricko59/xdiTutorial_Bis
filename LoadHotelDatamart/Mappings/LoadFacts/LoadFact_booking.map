@@ -12,7 +12,7 @@
       </expression>
     </field>
     <field id="_btHgFz50Ee2HIsvGuwi14w" enable="true" insert="true" name="UPDATE_DATE" ref="resource.md#_JZxi_z44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=UPDATE_DATE?" update="true">
-      <expression id="_6ERrwz50Ee2HIsvGuwi14w" setDescriptorRef="_6ERrwT50Ee2HIsvGuwi14w">
+      <expression id="_6ERrwz50Ee2HIsvGuwi14w" location="TRG" setDescriptorRef="_6ERrwT50Ee2HIsvGuwi14w">
         <expression>tr::currentTimestamp()</expression>
       </expression>
     </field>

@@ -93,4 +93,7 @@
       </node>
     </node>
   </node>
+  <node defType="com.stambia.file.directory" id="_IIXdED8vEe2HIsvGuwi14w" name="Statistic_Report_Folder">
+    <attribute defType="com.stambia.file.directory.path" id="_IIjqUD8vEe2HIsvGuwi14w" value="%{env:workspace_loc}%/Training/Files_Out/Statistic_Report"/>
+  </node>
 </md:node>
