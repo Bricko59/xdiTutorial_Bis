@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_Y_-AcD88Ee2HIsvGuwi14w" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_abT9ED88Ee2HIsvGuwi14w" alias="T_CUSTOMER" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W6rJ6T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_CUSTOMER?">
+    <field id="_abT9Ez88Ee2HIsvGuwi14w" fullAlias="TIT_CODE" name="TIT_CODE" ref="resource.md#_W6rJ9D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=TIT_CODE?"/>
+    <field id="_abT9FT88Ee2HIsvGuwi14w" fullAlias="CUS_FIRST_NAME" name="CUS_FIRST_NAME" ref="resource.md#_W6rKAj49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_FIRST_NAME?"/>
+    <field id="_abT9Fz88Ee2HIsvGuwi14w" fullAlias="CUS_BIRTH_DATE" name="CUS_BIRTH_DATE" ref="resource.md#_W6rKED49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_BIRTH_DATE?"/>
+    <field id="_abT9Ej88Ee2HIsvGuwi14w" fullAlias="CUS_ID" name="CUS_ID" ref="resource.md#_W6rJ7D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?" updateKey="true"/>
+    <field id="_abT9FD88Ee2HIsvGuwi14w" fullAlias="CUS_LAST_NAME" name="CUS_LAST_NAME" ref="resource.md#_W6rJ-z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_LAST_NAME?"/>
+    <field id="_abT9Fj88Ee2HIsvGuwi14w" fullAlias="CUS_COMPANY" name="CUS_COMPANY" ref="resource.md#_W6rKCT49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_COMPANY?"/>
+    <constraint id="_abT9GD88Ee2HIsvGuwi14w" name="FK_CUSTOMER_TITLE" ref="resource.md#_W7cl4D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_CUSTOMER_TITLE?" reject="true"/>
+    <constraint id="_abT9GT88Ee2HIsvGuwi14w" name="PK_T_CUSTOMER" ref="resource.md#_W606wD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_CUSTOMER?" reject="true"/>
+  </datastore>
+  <datastore id="_bhOcQD88Ee2HIsvGuwi14w" alias="T_TITLE" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W6C3oT49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_TITLE?">
+    <field id="_bhOcQz88Ee2HIsvGuwi14w" fullAlias="TIT_NAME" name="TIT_NAME" ref="resource.md#_W6C3qz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=TIT_NAME?"/>
+    <field id="_bhOcQj88Ee2HIsvGuwi14w" fullAlias="TIT_CODE" name="TIT_CODE" ref="resource.md#_W6C3pD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=TIT_CODE?" updateKey="true"/>
+    <constraint id="_bhOcRD88Ee2HIsvGuwi14w" name="PK_T_TITLE" ref="resource.md#_W6C3sj49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_TITLE?" reject="true"/>
+  </datastore>
+  <datastore id="_cQ93ID88Ee2HIsvGuwi14w" alias="T_PHONE" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W607HD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_PHONE?">
+    <field id="_cQ93JT88Ee2HIsvGuwi14w" fullAlias="PHO_NUMBER" name="PHO_NUMBER" ref="resource.md#_W6-r1z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHO_NUMBER?"/>
+    <field id="_cQ93Jj88Ee2HIsvGuwi14w" fullAlias="PHO_PHONING_ALLOWED" name="PHO_PHONING_ALLOWED" ref="resource.md#_W6-r3j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHO_PHONING_ALLOWED?"/>
+    <field id="_cQ93Iz88Ee2HIsvGuwi14w" fullAlias="CUS_ID" name="CUS_ID" ref="resource.md#_W6-ryD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?"/>
+    <field id="_cQ93Ij88Ee2HIsvGuwi14w" fullAlias="PHO_ID" name="PHO_ID" ref="resource.md#_W6-rwD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHO_ID?" updateKey="true"/>
+    <field id="_cQ93JD88Ee2HIsvGuwi14w" fullAlias="PHT_CODE" name="PHT_CODE" ref="resource.md#_W6-r0D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHT_CODE?"/>
+    <constraint id="_cQ93Jz88Ee2HIsvGuwi14w" name="PK_T_PHONE" ref="resource.md#_W6-r5T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_PHONE?" reject="true"/>
+    <constraint id="_cQ93KD88Ee2HIsvGuwi14w" name="FK_PHONE_CUSTOMER" ref="resource.md#_W7mW1D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_PHONE_CUSTOMER?" reject="true"/>
+    <constraint id="_cQ93KT88Ee2HIsvGuwi14w" name="FK_PHONE_PHONE_TYPE" ref="resource.md#_W7mW2D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_PHONE_PHONE_TYPE?" reject="true"/>
+  </datastore>
+  <datastore id="_dM23oD88Ee2HIsvGuwi14w" alias="T_PHONE_TYPE" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W6YO8T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_PHONE_TYPE?">
+    <field id="_dM23oj88Ee2HIsvGuwi14w" fullAlias="PHT_CODE" name="PHT_CODE" ref="resource.md#_W6h_0D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHT_CODE?" updateKey="true"/>
+    <field id="_dM23oz88Ee2HIsvGuwi14w" fullAlias="PHT_NAME" name="PHT_NAME" ref="resource.md#_W6h_1z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PHT_NAME?"/>
+    <constraint id="_dM23pD88Ee2HIsvGuwi14w" name="PK_T_PHONE_TYPE" ref="resource.md#_W6h_3j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_PHONE_TYPE?" reject="true"/>
+  </datastore>
+  <datastore id="_ec0DoD88Ee2HIsvGuwi14w" alias="T_ADDRESS" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W606xD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_ADDRESS?">
+    <field id="_ec6KQj88Ee2HIsvGuwi14w" fullAlias="CUS_ID" name="CUS_ID" ref="resource.md#_W606zz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?"/>
+    <field id="_ec6KQz88Ee2HIsvGuwi14w" fullAlias="ADR_LINE1" name="ADR_LINE1" ref="resource.md#_W6061z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LINE1?"/>
+    <field id="_ec6KRD88Ee2HIsvGuwi14w" fullAlias="ADR_LINE2" name="ADR_LINE2" ref="resource.md#_W6063j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LINE2?"/>
+    <field id="_ec6KRT88Ee2HIsvGuwi14w" fullAlias="ADR_LINE3" name="ADR_LINE3" ref="resource.md#_W6065T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LINE3?"/>
+    <field id="_ec6KRz88Ee2HIsvGuwi14w" fullAlias="ADR_ZIP_CODE" name="ADR_ZIP_CODE" ref="resource.md#_W6068z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_ZIP_CODE?"/>
+    <field id="_ec6KSj88Ee2HIsvGuwi14w" name="ADR_LAT" ref="resource.md#_W607CD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LAT?"/>
+    <field id="_ec6KSD88Ee2HIsvGuwi14w" fullAlias="ADR_CITY" name="ADR_CITY" ref="resource.md#_W606-j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_CITY?"/>
+    <field id="_ec6KST88Ee2HIsvGuwi14w" fullAlias="ADR_STATE_CODE" name="ADR_STATE_CODE" ref="resource.md#_W607AT49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_STATE_CODE?"/>
+    <field id="_ec6KRj88Ee2HIsvGuwi14w" fullAlias="ADR_LINE4" name="ADR_LINE4" ref="resource.md#_W6067D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LINE4?"/>
+    <field id="_ec6KQT88Ee2HIsvGuwi14w" fullAlias="ADR_ID" name="ADR_ID" ref="resource.md#_W606xz49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_ID?" updateKey="true"/>
+    <field id="_ec6KSz88Ee2HIsvGuwi14w" name="ADR_LON" ref="resource.md#_W607ED49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=ADR_LON?"/>
+    <constraint id="_ec6KTD88Ee2HIsvGuwi14w" name="FK_ADDRESS_CUSTOMER" ref="resource.md#_W7mW0D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_ADDRESS_CUSTOMER?" reject="true"/>
+    <constraint id="_ec6KTT88Ee2HIsvGuwi14w" name="PK_T_ADDRESS" ref="resource.md#_W607GD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_ADDRESS?" reject="true"/>
+  </datastore>
+  <datastore id="_fmwuQD88Ee2HIsvGuwi14w" alias="T_EMAIL" dataset="_bhUi4D88Ee2HIsvGuwi14w" ref="resource.md#_W6h_4j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=T_EMAIL?">
+    <field id="_fm204z88Ee2HIsvGuwi14w" fullAlias="EML_ADDRESS" name="EML_ADDRESS" ref="resource.md#_W6rJ0D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=EML_ADDRESS?"/>
+    <field id="_fm205T88Ee2HIsvGuwi14w" fullAlias="EML_MAILING_ALLOWED" name="EML_MAILING_ALLOWED" ref="resource.md#_W6rJ3j49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=EML_MAILING_ALLOWED?"/>
+    <field id="_fm204T88Ee2HIsvGuwi14w" fullAlias="EML_ID" name="EML_ID" ref="resource.md#_W6rJwD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=EML_ID?" updateKey="true"/>
+    <field id="_fm204j88Ee2HIsvGuwi14w" fullAlias="CUS_ID" name="CUS_ID" ref="resource.md#_W6rJyD49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=CUS_ID?"/>
+    <field id="_fm205D88Ee2HIsvGuwi14w" fullAlias="EML_TYPE" name="EML_TYPE" ref="resource.md#_W6rJ1z49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=EML_TYPE?"/>
+    <constraint id="_fm205j88Ee2HIsvGuwi14w" name="PK_T_EMAIL" ref="resource.md#_W6rJ5T49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=PK_T_EMAIL?" reject="true"/>
+    <constraint id="_fm205z88Ee2HIsvGuwi14w" name="FK_EMAIL_CUSTOMER" ref="resource.md#_W7cl3D49Ee27Rbg9YrGf1Q?fileId=_SuIQ0D49Ee27Rbg9YrGf1Q$type=md$name=FK_EMAIL_CUSTOMER?" reject="true"/>
+  </datastore>
+  <datastore id="_jFrFID88Ee2HIsvGuwi14w" alias="customerDetails" dataset="_jFxL9T88Ee2HIsvGuwi14w" ref="resource.md#_mnXfvj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=customerDetails?" subExpression="[A]">
+    <field id="_jFxLzT88Ee2HIsvGuwi14w" enable="true" insert="true" name="zipCode" parent="_jFxLyj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf8T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=zipCode?" update="true">
+      <expression id="_ozqGMj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_address.adr_zip_code</expression>
+      </expression>
+    </field>
+    <field id="_jFxLxD88Ee2HIsvGuwi14w" enable="true" insert="true" name="titleCode" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXfyj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=titleCode?" update="true">
+      <expression id="_ozqGMz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.tit_code</expression>
+      </expression>
+    </field>
+    <field id="_jFxLyD88Ee2HIsvGuwi14w" enable="true" insert="true" name="company" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf2j87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=company?" update="true">
+      <expression id="_ozqGND89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.cus_company</expression>
+      </expression>
+    </field>
+    <field id="_jFxLzD88Ee2HIsvGuwi14w" enable="true" insert="true" name="addressDetails" parent="_jFxLyj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf7T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=addressDetails?" update="true">
+      <expression id="_ozqGNT89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_address.ADR_LINE1|| ' '|| t_address.ADR_LINE2|| ' '||t_address.ADR_LINE3||' '||t_address.ADR_LINE4</expression>
+      </expression>
+    </field>
+    <field id="_jFxL0T88Ee2HIsvGuwi14w" enable="true" insert="true" name="phoneId" parent="_jFxL0D88Ee2HIsvGuwi14w" ref="resource.md#_mnXgAT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phoneId?" update="true">
+      <expression id="_ozqGNj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_phone.pho_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxLwj88Ee2HIsvGuwi14w" enable="true" expand="true" insert="true" name="customer" parent="_jFxLwT88Ee2HIsvGuwi14w" ref="resource.md#_mnXfwj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=customer?" update="true" updateKey="true">
+      <expression id="_ozqGMD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>T_customer.cus_last_name|| t_customer.cus_first_name|| t_customer.cus_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxL0D88Ee2HIsvGuwi14w" enable="true" expand="true" insert="true" name="phone" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf_T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phone?" update="true" updateKey="true">
+      <expression id="_ozqGNz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>T_phone.pho_number|| t_phone.pho_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxL1T88Ee2HIsvGuwi14w" enable="true" insert="true" name="phoningAllowed" parent="_jFxL0D88Ee2HIsvGuwi14w" ref="resource.md#_mnXgET87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phoningAllowed?" update="true">
+      <expression id="_ozqGOD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_phone.pho_phoning_allowed</expression>
+      </expression>
+    </field>
+    <field id="_jFxL1z88Ee2HIsvGuwi14w" enable="true" insert="true" name="emailId" parent="_jFxL1j88Ee2HIsvGuwi14w" ref="resource.md#_mnXgGT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=emailId?" update="true">
+      <expression id="_ozqGOT89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_email.eml_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxLwz88Ee2HIsvGuwi14w" enable="true" insert="true" name="customerId" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXfxj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=customerId?" update="true">
+      <expression id="_ozqGOj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.cus_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxLyj88Ee2HIsvGuwi14w" enable="true" expand="true" insert="true" name="address" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf5T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=address?" update="true" updateKey="true">
+      <expression id="_ozqGOz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>T_address.adr_zip_code|| t_address.adr_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxL2D88Ee2HIsvGuwi14w" enable="true" insert="true" name="emailAddress" parent="_jFxL1j88Ee2HIsvGuwi14w" ref="resource.md#_mnXgHT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=emailAddress?" update="true">
+      <expression id="_ozqGPD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_email.eml_address</expression>
+      </expression>
+    </field>
+    <field id="_jFxLwT88Ee2HIsvGuwi14w" expand="true" name="customerDetails" ref="resource.md#_mnXfvj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=customerDetails?" updateKey="true">
+      <expression id="_ozqGPT89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w"/>
+    </field>
+    <field id="_jFxLxT88Ee2HIsvGuwi14w" enable="true" insert="true" name="title" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXfzj87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=title?" update="true">
+      <expression id="_ozqGPj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_title.tit_name</expression>
+      </expression>
+    </field>
+    <field id="_jFxLyz88Ee2HIsvGuwi14w" enable="true" insert="true" name="addressId" parent="_jFxLyj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf6T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=addressId?" update="true">
+      <expression id="_ozqGPz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_address.adr_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxL1j88Ee2HIsvGuwi14w" enable="true" expand="true" insert="true" name="email" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXgFT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=email?" update="true" updateKey="true">
+      <expression id="_ozqGQD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>T_email.eml_address|| t_email.eml_id</expression>
+      </expression>
+    </field>
+    <field id="_jFxLyT88Ee2HIsvGuwi14w" enable="true" insert="true" name="birthDate" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf3j87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=birthDate?" update="true">
+      <expression id="_ozqGQT89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.cus_birth_date</expression>
+      </expression>
+    </field>
+    <field id="_jFxL2j88Ee2HIsvGuwi14w" enable="true" insert="true" name="mailingAllowed" parent="_jFxL1j88Ee2HIsvGuwi14w" ref="resource.md#_mnXgJT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=mailingAllowed?" update="true">
+      <expression id="_ozqGQj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_email.eml_mailing_allowed</expression>
+      </expression>
+    </field>
+    <field id="_jFxLxj88Ee2HIsvGuwi14w" enable="true" insert="true" name="firstName" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf0j87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=firstName?" update="true">
+      <expression id="_ozqGQz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.cus_first_name</expression>
+      </expression>
+    </field>
+    <field id="_jFxL0z88Ee2HIsvGuwi14w" enable="true" insert="true" name="phoneNumber" parent="_jFxL0D88Ee2HIsvGuwi14w" ref="resource.md#_mnXgCT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phoneNumber?" update="true">
+      <expression id="_ozqGRD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_phone.pho_number</expression>
+      </expression>
+    </field>
+    <field id="_jFxLxz88Ee2HIsvGuwi14w" enable="true" insert="true" name="lastName" parent="_jFxLwj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf1j87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=lastName?" update="true">
+      <expression id="_ozqGRT89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_customer.cus_last_name</expression>
+      </expression>
+    </field>
+    <field id="_jFxL1D88Ee2HIsvGuwi14w" enable="true" insert="true" name="phoneType" parent="_jFxL0D88Ee2HIsvGuwi14w" ref="resource.md#_mnXgDT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phoneType?" update="true">
+      <expression id="_ozqGRj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_phone_type.pht_name</expression>
+      </expression>
+    </field>
+    <field id="_jFxL2T88Ee2HIsvGuwi14w" enable="true" insert="true" name="emailType" parent="_jFxL1j88Ee2HIsvGuwi14w" ref="resource.md#_mnXgIT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=emailType?" update="true">
+      <expression id="_ozqGRz89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_email.eml_type</expression>
+      </expression>
+    </field>
+    <field id="_jFxL0j88Ee2HIsvGuwi14w" enable="true" insert="true" name="phoneTypeCode" parent="_jFxL0D88Ee2HIsvGuwi14w" ref="resource.md#_mnXgBT87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=phoneTypeCode?" update="true">
+      <expression id="_ozqGSD89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_phone.pht_code</expression>
+      </expression>
+    </field>
+    <field id="_jFxLzj88Ee2HIsvGuwi14w" enable="true" insert="true" name="city" parent="_jFxLyj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf9T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=city?" update="true">
+      <expression id="_ozqGST89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_address.adr_city</expression>
+      </expression>
+    </field>
+    <field id="_jFxLzz88Ee2HIsvGuwi14w" enable="true" insert="true" name="stateCode" parent="_jFxLyj88Ee2HIsvGuwi14w" ref="resource.md#_mnXf-T87Ee2HIsvGuwi14w?fileId=_cO3a0D87Ee2HIsvGuwi14w$type=md$name=stateCode?" update="true">
+      <expression id="_ozqGSj89Ee2HIsvGuwi14w" setDescriptorRef="_ozqGMT89Ee2HIsvGuwi14w">
+        <expression>t_address.adr_state_code</expression>
+      </expression>
+    </field>
+    <setDescriptor id="_ozqGMT89Ee2HIsvGuwi14w" label="A"/>
+  </datastore>
+  <join id="_Zh0o8D8_Ee2HIsvGuwi14w" location="SRC" joinType="Left_Join" left="_abT9ED88Ee2HIsvGuwi14w" order="10" right="_bhOcQD88Ee2HIsvGuwi14w">
+    <expression>T_CUSTOMER.TIT_CODE = T_TITLE.TIT_CODE</expression>
+  </join>
+  <join id="_cdfv4D8_Ee2HIsvGuwi14w" location="SRC" joinType="Left_Join" left="_abT9ED88Ee2HIsvGuwi14w" order="30" right="_fmwuQD88Ee2HIsvGuwi14w">
+    <expression>T_CUSTOMER.CUS_ID = T_EMAIL.CUS_ID</expression>
+  </join>
+  <join id="_gIVp8D8_Ee2HIsvGuwi14w" location="SRC" joinType="Left_Join" left="_abT9ED88Ee2HIsvGuwi14w" order="50" right="_ec0DoD88Ee2HIsvGuwi14w">
+    <expression>T_CUSTOMER.CUS_ID = T_ADDRESS.CUS_ID</expression>
+  </join>
+  <join id="_oGJ1ED8_Ee2HIsvGuwi14w" location="SRC" joinType="Left_Join" left="_abT9ED88Ee2HIsvGuwi14w" order="70" right="_cQ93ID88Ee2HIsvGuwi14w">
+    <expression>T_CUSTOMER.CUS_ID = T_PHONE.CUS_ID</expression>
+  </join>
+  <join id="_rU-hgD8_Ee2HIsvGuwi14w" location="SRC" joinType="Left_Join" left="_cQ93ID88Ee2HIsvGuwi14w" order="90" right="_dM23oD88Ee2HIsvGuwi14w">
+    <expression>T_PHONE.PHT_CODE = T_PHONE_TYPE.PHT_CODE</expression>
+  </join>
+  <template id="_o0AEcD89Ee2HIsvGuwi14w" name="I_customerDetails" process="resource.proc#_brHmkaEoEd6xg_kipsVRYg?fileId=_brHmkaEoEd6xg_kipsVRYg$type=proc$name=INTEGRATION%20Rdbms%20to%20Xml?" targetId="_jFrFID88Ee2HIsvGuwi14w"/>
+  <dataSet id="_bhUi4D88Ee2HIsvGuwi14w">
+    <container>_bhOcQD88Ee2HIsvGuwi14w</container>
+    <container>_abT9ED88Ee2HIsvGuwi14w</container>
+    <container>_fmwuQD88Ee2HIsvGuwi14w</container>
+    <container>_ec0DoD88Ee2HIsvGuwi14w</container>
+    <container>_cQ93ID88Ee2HIsvGuwi14w</container>
+    <container>_dM23oD88Ee2HIsvGuwi14w</container>
+  </dataSet>
+  <dataSet id="_jFxL9T88Ee2HIsvGuwi14w">
+    <container>_jFrFID88Ee2HIsvGuwi14w</container>
+  </dataSet>
+  <hint>
+    <usedField>#_abT9Ez88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_abT9FT88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_abT9Fz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_abT9Ej88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_abT9FD88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_abT9Fj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_bhOcQz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_bhOcQj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_cQ93JT88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_cQ93Jj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_cQ93Iz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_cQ93Ij88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_cQ93JD88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_dM23oj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_dM23oz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KQj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KQz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KRD88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KRT88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KRz88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KSD88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KST88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KRj88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_ec6KQT88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_fm204z88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_fm205T88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_fm204T88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_fm204j88Ee2HIsvGuwi14w</usedField>
+    <usedField>#_fm205D88Ee2HIsvGuwi14w</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_ZB7IQj88Ee2HIsvGuwi14w" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ZiA2Mj8_Ee2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZiA2Mz8_Ee2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZiA2ND8_Ee2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ZiA2NT8_Ee2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_Zh0o8D8_Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZiA2Nj8_Ee2HIsvGuwi14w" x="390" y="360"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_cdyDwj8_Ee2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_cdyDwz8_Ee2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cdyDxD8_Ee2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_cdyDxT8_Ee2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_cdfv4D8_Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cdyDxj8_Ee2HIsvGuwi14w" x="390" y="476"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_gIn90j8_Ee2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_gIn90z8_Ee2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_gIn91D8_Ee2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_gIn91T8_Ee2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_gIVp8D8_Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gIn91j8_Ee2HIsvGuwi14w" x="390" y="561"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_oGiPkj8_Ee2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_oGiPkz8_Ee2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_oGiPlD8_Ee2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_oGiPlT8_Ee2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_oGJ1ED8_Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oGiPlj8_Ee2HIsvGuwi14w" x="390" y="677"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_rVW8AT8_Ee2HIsvGuwi14w" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rVW8Aj8_Ee2HIsvGuwi14w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rVW8Az8_Ee2HIsvGuwi14w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_rVW8BD8_Ee2HIsvGuwi14w"/>
+    <element xmi:type="map:Join" href="resource.map#_rU-hgD8_Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rVW8BT8_Ee2HIsvGuwi14w" x="390" y="875"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_bhUi6j88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi7D88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi7T88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi7j88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi7z88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_bhUi8D88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bhUi8T88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bhUi8j88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi8z88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_bhUi9D88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bhUi9T88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bhUi9j88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bhUi9z88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_bhUi-D88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_bhOcQD88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhUi6z88Ee2HIsvGuwi14w" x="30" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dM23uT88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23uz88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23vD88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23vT88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23vj88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dM23vz88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dM23wD88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dM23wT88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23wj88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_dM23wz88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dM23xD88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dM23xT88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dM23xj88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dM23xz88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_dM23oD88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dM23uj88Ee2HIsvGuwi14w" x="30" y="1191"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fm21CD88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21Cj88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21Cz88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21DD88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21DT88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fm21Dj88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fm21Dz88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fm21ED88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21ET88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_fm21Ej88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fm21Ez88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fm21FD88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fm21FT88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fm21Fj88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_fmwuQD88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fm21CT88Ee2HIsvGuwi14w" x="30" y="446"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_cQ93Pz88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93QT88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93Qj88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93Qz88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93RD88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_cQ93RT88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_cQ93Rj88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_cQ93Rz88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93SD88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_cQ93ST88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cQ93Sj88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_cQ93Sz88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_cQ93TD88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_cQ93TT88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_cQ93ID88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cQ93QD88Ee2HIsvGuwi14w" x="30" y="958"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_abaDvj88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDwD88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDwT88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDwj88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDwz88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_abaDxD88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_abaDxT88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_abaDxj88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDxz88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_abaDyD88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_abaDyT88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_abaDyj88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_abaDyz88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_abaDzD88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_abT9ED88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_abaDvz88Ee2HIsvGuwi14w" x="30" y="188"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ec6KcD88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6Kcj88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6Kcz88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6KdD88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6KdT88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ec6Kdj88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ec6Kdz88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ec6KeD88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6KeT88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ec6Kej88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ec6Kez88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ec6KfD88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ec6KfT88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ec6Kfj88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_ec0DoD88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ec6KcT88Ee2HIsvGuwi14w" x="30" y="679" width="202" height="219"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_jFxMEj88Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMFD88Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMFT88Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMFj88Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMFz88Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jFxMGD88Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jFxMGT88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jFxMGj88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMGz88Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_jFxMHD88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jFxMHT88Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jFxMHj88Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jFxMHz88Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jFxMID88Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_jFrFID88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFxMEz88Ee2HIsvGuwi14w" x="484" y="290"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ZB7IQz88Ee2HIsvGuwi14w"/>
+  <element xmi:type="map:Map" href="resource.map#_Y_-AcD88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map$name=GenerateXMLCustomerDetails?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_oz5Wxj89Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_abaDvj88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oz5Wxz89Ee2HIsvGuwi14w" points="[0, 0, 223, 175]$[-94, 0, 129, 175]$[-223, -175, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY51D8_Ee2HIsvGuwi14w" id="(0.0,0.20351390922401172)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY51T8_Ee2HIsvGuwi14w" id="(1.0,0.3333333333333333)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_oz5Wyj89Ee2HIsvGuwi14w" type="targetSetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_jFxMEj88Ee2HIsvGuwi14w">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_ozqGMT89Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oz5Wyz89Ee2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_4CZhQD89Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_bhUi6j88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4CZhQT89Ee2HIsvGuwi14w" points="[0, 0, 284, 269]$[-155, -203, 129, 66]$[-284, -269, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY51j8_Ee2HIsvGuwi14w" id="(0.0,0.060029282576866766)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY51z8_Ee2HIsvGuwi14w" id="(1.0,0.32653061224489793)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_4CZhQj89Ee2HIsvGuwi14w" type="targetDataSetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_jFxMEj88Ee2HIsvGuwi14w">
+    <element xmi:type="map:DataSet" href="resource.map#_bhUi4D88Ee2HIsvGuwi14w?fileId=_Y_-AcD88Ee2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4CZhQz89Ee2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_7ydSgD89Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_ec6KcD88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7ydSgT89Ee2HIsvGuwi14w" points="[0, 0, 252, 0]$[-252, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY53D8_Ee2HIsvGuwi14w" id="(0.0,0.6676427525622255)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY53T8_Ee2HIsvGuwi14w" id="(1.0,0.3059360730593607)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_FfzFED8_Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_cQ93Pz88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FfzFET8_Ee2HIsvGuwi14w" points="[0, 0, 154, -214]$[-94, 0, 60, -214]$[-154, 214, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY52j8_Ee2HIsvGuwi14w" id="(0.0,0.7906295754026355)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY52z8_Ee2HIsvGuwi14w" id="(1.0,0.49710982658959535)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_MlrioD8_Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_dM23uT88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MlrioT8_Ee2HIsvGuwi14w" points="[0, 0, 275, -326]$[-155, 260, 120, -66]$[-275, 326, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY53j8_Ee2HIsvGuwi14w" id="(0.0,0.9370424597364568)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY53z8_Ee2HIsvGuwi14w" id="(1.0,0.6632653061224489)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_PwGQMD8_Ee2HIsvGuwi14w" type="targetLink" source="_jFxMEj88Ee2HIsvGuwi14w" target="_fm21CD88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PwGQMT8_Ee2HIsvGuwi14w" points="[0, 0, 167, 77]$[-94, 0, 73, 77]$[-167, -77, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY52D8_Ee2HIsvGuwi14w" id="(0.0,0.4978038067349927)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY52T8_Ee2HIsvGuwi14w" id="(1.0,0.6184971098265896)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ZiG80D8_Ee2HIsvGuwi14w" type="joinLink" source="_ZiA2Mj8_Ee2HIsvGuwi14w" target="_bhUi6j88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZiG80T8_Ee2HIsvGuwi14w" points="[17, 0, 1064, -52]$[77, 0, 1124, -52]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5zD8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5zT8_Ee2HIsvGuwi14w" id="(1.0,0.6632653061224489)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ZiG80j8_Ee2HIsvGuwi14w" type="joinLink" source="_ZiA2Mj8_Ee2HIsvGuwi14w" target="_abaDvj88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZiG80z8_Ee2HIsvGuwi14w" points="[17, 0, 1063, 182]$[77, 0, 1123, 182]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5zj8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5zz8_Ee2HIsvGuwi14w" id="(1.0,0.16666666666666666)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_cdyDxz8_Ee2HIsvGuwi14w" type="joinLink" source="_cdyDwj8_Ee2HIsvGuwi14w" target="_abaDvj88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cdyDyD8_Ee2HIsvGuwi14w" points="[17, 0, 1063, 298]$[77, 0, 1123, 298]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5xD8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5xT8_Ee2HIsvGuwi14w" id="(1.0,0.5)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_cdyDyT8_Ee2HIsvGuwi14w" type="joinLink" source="_cdyDwj8_Ee2HIsvGuwi14w" target="_fm21CD88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cdyDyj8_Ee2HIsvGuwi14w" points="[17, 0, 617, 319]$[77, 0, 677, 319]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5xj8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5xz8_Ee2HIsvGuwi14w" id="(1.0,0.24277456647398843)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_gIn91z8_Ee2HIsvGuwi14w" type="joinLink" source="_gIn90j8_Ee2HIsvGuwi14w" target="_abaDvj88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gIn92D8_Ee2HIsvGuwi14w" points="[17, 0, 1063, 383]$[77, 0, 1123, 383]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5wj8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5wz8_Ee2HIsvGuwi14w" id="(1.0,0.6666666666666666)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_gIn92T8_Ee2HIsvGuwi14w" type="joinLink" source="_gIn90j8_Ee2HIsvGuwi14w" target="_ec6KcD88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gIn92j8_Ee2HIsvGuwi14w" points="[17, 0, 991, -58]$[77, 0, 1051, -58]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5wD8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5wT8_Ee2HIsvGuwi14w" id="(1.0,0.1506849315068493)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_oGiPlz8_Ee2HIsvGuwi14w" type="joinLink" source="_oGiPkj8_Ee2HIsvGuwi14w" target="_abaDvj88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oGiPmD8_Ee2HIsvGuwi14w" points="[17, 0, 1063, 499]$[77, 0, 1123, 499]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5yj8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5yz8_Ee2HIsvGuwi14w" id="(1.0,0.8282828282828283)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_oGiPmT8_Ee2HIsvGuwi14w" type="joinLink" source="_oGiPkj8_Ee2HIsvGuwi14w" target="_cQ93Pz88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oGiPmj8_Ee2HIsvGuwi14w" points="[17, 0, 577, 94]$[77, 0, 637, 94]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5yD8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY5yT8_Ee2HIsvGuwi14w" id="(1.0,0.24855491329479767)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rVdCoD8_Ee2HIsvGuwi14w" type="joinLink" source="_rVW8AT8_Ee2HIsvGuwi14w" target="_cQ93Pz88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rVdCoT8_Ee2HIsvGuwi14w" points="[17, 0, 577, 292]$[77, 0, 637, 292]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY50D8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY50T8_Ee2HIsvGuwi14w" id="(1.0,0.7456647398843931)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rVdCoj8_Ee2HIsvGuwi14w" type="joinLink" source="_rVW8AT8_Ee2HIsvGuwi14w" target="_dM23uT88Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rVdCoz8_Ee2HIsvGuwi14w" points="[17, 0, 736, 118]$[77, 0, 796, 118]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY50j8_Ee2HIsvGuwi14w" id="(1.0,0.48)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfY50z8_Ee2HIsvGuwi14w" id="(1.0,0.32653061224489793)"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_B4yGoD81Ee2HIsvGuwi14w" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_ENEdcD81Ee2HIsvGuwi14w" alias="DIM_GEOGRAPHY" dataset="_ENIu7T81Ee2HIsvGuwi14w" ref="resource.md#_JaFE0T44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=DIM_GEOGRAPHY?" subExpression="[A]">
+    <field id="_ENIu4T81Ee2HIsvGuwi14w" enable="true" insert="true" name="GEO_KEY_ID" ref="resource.md#_JaNAoD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_KEY_ID?" update="false" updateKey="false">
+      <expression id="_MREJED81Ee2HIsvGuwi14w" location="TRG" setDescriptorRef="_MREJET81Ee2HIsvGuwi14w">
+        <expression>next value for HOTEL_DATAMART.SEQ_GEO_KEY_ID</expression>
+      </expression>
+    </field>
+    <field id="_ENIu5D81Ee2HIsvGuwi14w" enable="true" insert="true" name="GEO_STATE_CODE" ref="resource.md#_JaNnvj44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_STATE_CODE?" update="true">
+      <expression id="_MREJEj81Ee2HIsvGuwi14w" setDescriptorRef="_MREJET81Ee2HIsvGuwi14w">
+        <expression>geography.geography/state/@code</expression>
+      </expression>
+    </field>
+    <field id="_ENIu5T81Ee2HIsvGuwi14w" enable="true" insert="true" name="GEO_STATE" ref="resource.md#_JaNnxT44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_STATE?" update="true">
+      <expression id="_MREJEz81Ee2HIsvGuwi14w" setDescriptorRef="_MREJET81Ee2HIsvGuwi14w">
+        <expression>geography.geography/state/@stateName</expression>
+      </expression>
+    </field>
+    <field id="_ENIu4j81Ee2HIsvGuwi14w" enable="true" insert="true" name="GEO_ZIP_CODE" ref="resource.md#_JaNnsD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_ZIP_CODE?" update="true" updateKey="true">
+      <expression id="_MREJFD81Ee2HIsvGuwi14w" setDescriptorRef="_MREJET81Ee2HIsvGuwi14w">
+        <expression>geography.geography/state/city/@zipCode</expression>
+      </expression>
+    </field>
+    <field id="_ENIu4z81Ee2HIsvGuwi14w" enable="true" insert="true" name="GEO_CITY" ref="resource.md#_JaNntz44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=GEO_CITY?" update="true">
+      <expression id="_MREJFT81Ee2HIsvGuwi14w" setDescriptorRef="_MREJET81Ee2HIsvGuwi14w">
+        <expression>geography.geography/state/city/@cityName</expression>
+      </expression>
+    </field>
+    <constraint id="_ENIu5j81Ee2HIsvGuwi14w" name="PK_DIM_GEOGRAPHY" ref="resource.md#_JaQrAD44Ee27Rbg9YrGf1Q?fileId=__IDbYD43Ee27Rbg9YrGf1Q$type=md$name=PK_DIM_GEOGRAPHY?" reject="true"/>
+    <setDescriptor id="_MREJET81Ee2HIsvGuwi14w" label="A"/>
+  </datastore>
+  <datastore id="_FEa8MD81Ee2HIsvGuwi14w" alias="geography" dataset="_FEa8Qj81Ee2HIsvGuwi14w" ref="resource.md#_uCIFRT80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=geography?">
+    <field id="_FEa8NT81Ee2HIsvGuwi14w" fullAlias="geography/state/@stateName" name="stateName" parent="_FEa8Mz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFTT80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=stateName?"/>
+    <field id="_FEa8Mz81Ee2HIsvGuwi14w" expand="true" name="state" parent="_FEa8Mj81Ee2HIsvGuwi14w" ref="resource.md#_uCIFST80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=state?" updateKey="true"/>
+    <field id="_FEa8OT81Ee2HIsvGuwi14w" fullAlias="geography/state/city/@zipCode" name="zipCode" parent="_FEa8Nz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFXD80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=zipCode?"/>
+    <field id="_FEa8Nz81Ee2HIsvGuwi14w" expand="true" name="city" parent="_FEa8Mz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFWD80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=city?" updateKey="true"/>
+    <field id="_FEa8ND81Ee2HIsvGuwi14w" fullAlias="geography/state/@code" name="code" parent="_FEa8Mz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFUz80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=code?"/>
+    <field id="_FEa8Mj81Ee2HIsvGuwi14w" expand="true" name="geography" ref="resource.md#_uCIFRT80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=geography?" updateKey="true"/>
+    <field id="_FEa8Nj81Ee2HIsvGuwi14w" name="upperCaseName" parent="_FEa8Mz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFUD80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=upperCaseName?"/>
+    <field id="_FEa8OD81Ee2HIsvGuwi14w" fullAlias="geography/state/city/@cityName" name="cityName" parent="_FEa8Nz81Ee2HIsvGuwi14w" ref="resource.md#_uCIFXz80Ee2HIsvGuwi14w?fileId=_ZWh_8D80Ee2HIsvGuwi14w$type=md$name=cityName?"/>
+  </datastore>
+  <template id="_MRKPuz81Ee2HIsvGuwi14w" name="I_DIM_GEOGRAPHY" process="resource.proc#_HFOfdjEZEd-WZe6cNi2k2w?fileId=_HFOfdjEZEd-WZe6cNi2k2w$type=proc$name=INTEGRATION%20Hsql?" targetId="_ENEdcD81Ee2HIsvGuwi14w"/>
+  <template id="_PxworD81Ee2HIsvGuwi14w" name="L1_DIM_GEOGRAPHY" process="resource.proc#_eNVMMrdDEd6wPMNq-9tkHw?fileId=_eNVMMrdDEd6wPMNq-9tkHw$type=proc$name=Load%20Xml%20to%20Rdbms?" sourceId="_FEa8MD81Ee2HIsvGuwi14w" targetId="_ENEdcD81Ee2HIsvGuwi14w"/>
+  <dataSet id="_ENIu7T81Ee2HIsvGuwi14w">
+    <container>_ENEdcD81Ee2HIsvGuwi14w</container>
+  </dataSet>
+  <dataSet id="_FEa8Qj81Ee2HIsvGuwi14w">
+    <container>_FEa8MD81Ee2HIsvGuwi14w</container>
+  </dataSet>
+  <hint>
+    <usedField>#_FEa8NT81Ee2HIsvGuwi14w</usedField>
+    <usedField>#_FEa8OT81Ee2HIsvGuwi14w</usedField>
+    <usedField>#_FEa8ND81Ee2HIsvGuwi14w</usedField>
+    <usedField>#_FEa8OD81Ee2HIsvGuwi14w</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_B6unYj81Ee2HIsvGuwi14w" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_ENO1gz81Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1hT81Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1hj81Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1hz81Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1iD81Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ENO1iT81Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ENO1ij81Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ENO1iz81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1jD81Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ENO1jT81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ENO1jj81Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ENO1jz81Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ENO1kD81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ENO1kT81Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_ENEdcD81Ee2HIsvGuwi14w?fileId=_B4yGoD81Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ENO1hD81Ee2HIsvGuwi14w" x="335" y="63" width="688"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_FEa8Sz81Ee2HIsvGuwi14w" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8TT81Ee2HIsvGuwi14w" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8Tj81Ee2HIsvGuwi14w" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8Tz81Ee2HIsvGuwi14w" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8UD81Ee2HIsvGuwi14w" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FEa8UT81Ee2HIsvGuwi14w" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FEa8Uj81Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FEa8Uz81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8VD81Ee2HIsvGuwi14w" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_FEa8VT81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FEa8Vj81Ee2HIsvGuwi14w" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FEa8Vz81Ee2HIsvGuwi14w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FEa8WD81Ee2HIsvGuwi14w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FEa8WT81Ee2HIsvGuwi14w" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_FEa8MD81Ee2HIsvGuwi14w?fileId=_B4yGoD81Ee2HIsvGuwi14w$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FEa8TD81Ee2HIsvGuwi14w" x="30" y="30"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_B6unYz81Ee2HIsvGuwi14w"/>
+  <element xmi:type="map:Map" href="resource.map#_B4yGoD81Ee2HIsvGuwi14w?fileId=_B4yGoD81Ee2HIsvGuwi14w$type=map$name=LoadDim_geographywithXML?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_PxwooD81Ee2HIsvGuwi14w" type="targetLink" source="_ENO1gz81Ee2HIsvGuwi14w" target="_FEa8Sz81Ee2HIsvGuwi14w">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PxwooT81Ee2HIsvGuwi14w" points="[0, 0, 60, 0]$[-60, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rqlJoD81Ee2HIsvGuwi14w" id="(0.0,0.49710982658959535)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rqlJoT81Ee2HIsvGuwi14w" id="(1.0,0.497907949790795)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Pxwooj81Ee2HIsvGuwi14w" type="targetDataSetLink" source="_ENO1gz81Ee2HIsvGuwi14w" target="_ENO1gz81Ee2HIsvGuwi14w">
+    <element xmi:type="map:DataSet" href="resource.map#_FEa8Qj81Ee2HIsvGuwi14w?fileId=_B4yGoD81Ee2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pxwooz81Ee2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_PxwopD81Ee2HIsvGuwi14w" type="targetSetLink" source="_ENO1gz81Ee2HIsvGuwi14w" target="_ENO1gz81Ee2HIsvGuwi14w">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_MREJET81Ee2HIsvGuwi14w?fileId=_B4yGoD81Ee2HIsvGuwi14w$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PxwopT81Ee2HIsvGuwi14w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
