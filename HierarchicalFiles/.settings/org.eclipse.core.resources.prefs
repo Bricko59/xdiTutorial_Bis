@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//Read&Write/GeneratejsonmarketingCampaignfromxml.map=UTF-8
 encoding//Read/LoadDim_geographywithXML.map=UTF-8
 encoding//Read/LoadMarketingCampaigns.map=UTF-8
+encoding//Write/GenerateJsonCustomerDetails.map=UTF-8
 encoding//Write/GenerateXMLCustomerDetails.map=UTF-8
