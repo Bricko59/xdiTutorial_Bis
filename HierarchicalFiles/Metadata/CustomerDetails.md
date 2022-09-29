@@ -3,6 +3,7 @@
   <node defType="com.stambia.json.rootObject" id="_ZPP0UD_FEe2HIsvGuwi14w" name="CustomerDetails">
     <attribute defType="com.stambia.json.rootObject.encoding" id="_ZPY-QD_FEe2HIsvGuwi14w" value="UTF-8"/>
     <attribute defType="com.stambia.json.rootObject.reverseJsonSchemaFilePath" id="_ZPcBkT_FEe2HIsvGuwi14w" value="C:\Tutorial_Semarchy_Bis\Training\Files_In\Json\customerDetails.jsonschema"/>
+    <attribute defType="com.stambia.json.rootObject.filePath" id="_G9Ab8D_ZEe2HIsvGuwi14w" value="%{env:workspace_loc}%/Training/Files_Out/Json/customerDetails.json"/>
     <node defType="com.stambia.json.array" id="_lATAhT_FEe2HIsvGuwi14w" name="customer_list">
       <node defType="com.stambia.json.object" id="_lATAhj_FEe2HIsvGuwi14w" name="CustomerList">
         <node defType="com.stambia.json.value" id="_lATAhz_FEe2HIsvGuwi14w" name="firstName">
